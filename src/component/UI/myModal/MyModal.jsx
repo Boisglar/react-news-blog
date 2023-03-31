@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import s from './MyModal.module.css';
 
 function MyModal({ children, visible, setVisible }) {
