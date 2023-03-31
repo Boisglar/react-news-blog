@@ -1,5 +1,4 @@
 import React from 'react';
-import PostList from './PostList';
 import MyInput from './UI/input/MyInput';
 import MySelect from './UI/select/MySelect';
 
