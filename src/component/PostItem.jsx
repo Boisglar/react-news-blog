@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import MyButton from './UI/button/MyButton';
 
 export default function PostItem({ post, remove }) {
@@ -10,6 +11,9 @@ export default function PostItem({ post, remove }) {
         </strong>
         <div>{post.body}</div>
         <div className="post__btns">
+          <Link to={`/posts/${post.id}`}>
+            <MyButton>Открыть</MyButton>
+          </Link>
           <MyButton onClick={() => remove(post)}>удалить</MyButton>
         </div>
       </div>
