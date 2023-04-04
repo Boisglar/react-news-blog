@@ -26,3 +26,4 @@ export default class ClassCounter extends React.Component {
     );
   }
 }
+/// Пример Классового компонента !!!

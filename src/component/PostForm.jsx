@@ -17,7 +17,7 @@ function PostForm({ create }) {
   };
   return (
     <>
-      <form>
+      <form className="post-form">
         <MyInput
           value={post.title}
           onChange={(e) => setPost({ ...post, title: e.target.value })}

@@ -22,7 +22,7 @@ const PostById = () => {
   useEffect(() => {
     FetchPostById();
     fetchCommets();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (postError) {
     return <h3>{postError}</h3>;
@@ -33,17 +33,17 @@ const PostById = () => {
         <LoaderG />
       ) : (
         <div className="fullPost">
-          <h5>{post.title}</h5>
+          <h2>{post.title}</h2>
           <div>{post.body}</div>
         </div>
       )}
-      <div>
+      <div className="comments">
         <h2>Коменты:</h2>
 
         {comments.map((comm) => {
           return (
-            <div key={comm.id} style={{ margin: '30px' }}>
-              <h3>{comm.email}</h3>
+            <div key={comm.id} className="post-comment">
+              <h4>{comm.email}</h4>
               <div>{comm.body}</div>
             </div>
           );

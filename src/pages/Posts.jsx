@@ -36,7 +36,7 @@ function Posts() {
 
   useEffect(() => {
     fetchPosts();
-  }, [page, limit]);
+  }, [page, limit]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const changePage = (page) => {
     setPage(page);
@@ -53,9 +53,9 @@ function Posts() {
 
   return (
     <div className="App">
-      <MyButton style={{ marginTop: '30px' }} onClick={() => setModal(true)}>
-        Создать пост
-      </MyButton>
+      <div className="postAddBtn">
+        <MyButton onClick={() => setModal(true)}>Создать пост</MyButton>
+      </div>
       <MyModal visible={modal} setVisible={setModal}>
         <PostForm create={createPost} setPosts={setPosts} />
       </MyModal>
@@ -74,9 +74,11 @@ function Posts() {
       />
       {errorPosts && <h1>Произошла ошибка {errorPosts.massege}</h1>}
       <PostList posts={sortedAndSearchedPosts} remove={removePost} title={'Posts'} />
-      <div ref={lastElement} style={{ height: '20px', background: 'red' }}></div>
+      <div ref={lastElement}>
+        <hr />
+      </div>
       {isLoadingPosts && (
-        <div style={{ display: 'flex', justifyContent: 'center', margin: '60px' }}>
+        <div className="posts-loader">
           <LoaderG />
         </div>
       )}

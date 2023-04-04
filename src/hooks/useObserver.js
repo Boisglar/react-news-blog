@@ -13,5 +13,5 @@ export const useObserver = (ref, canLoad, isLoading, callback) => {
     };
     observer.current = new IntersectionObserver(cd);
     observer.current.observe(ref.current);
-  }, [isLoading]);
+  }, [isLoading]); // eslint-disable-line react-hooks/exhaustive-deps
 };

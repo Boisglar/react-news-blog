@@ -70,13 +70,43 @@ h3 {
   color: teal;
   border-bottom: 1px solid teal;
 }
+.posts-loader {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
 
 .navbar__links a {
   text-decoration: none;
   margin-right: 30px;
 }
 .fullPost {
+  padding: 30px;
   margin: 15px;
 }
-.fullPost h5 {
+
+.not-fount-page {
+  margin: 30px;
+}
+.comments {
+  padding: 30px;
+  border: 1px solid teal;
+}
+.post-comment {
+  margin: 30px;
+}
+.post-comment h4 {
+  padding: 5px;
+  background-color: rgb(204, 236, 236);
+}
+.post-list h1 {
+  text-align: center;
+}
+.postAddBtn {
+  text-align: center;
+  margin: 20px;
+}
+.select-sotr select {
+  padding: 5px;
+  margin-top: 10px;
 }

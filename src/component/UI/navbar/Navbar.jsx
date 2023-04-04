@@ -4,7 +4,7 @@ import { AuthContext } from '../../../context/context';
 import MyButton from '../button/MyButton';
 
 function Navbar() {
-  const { setIsAuth } = useContext(AuthContext);
+  const { isAuth, setIsAuth } = useContext(AuthContext);
 
   const logout = () => {
     setIsAuth(false);
@@ -17,7 +17,7 @@ function Navbar() {
         <NavLink to="/About"> О сайте </NavLink>
         <NavLink to="/posts"> Посты</NavLink>
       </div>
-      <MyButton onClick={logout}>выйти</MyButton>
+      {isAuth && <MyButton onClick={logout}>выйти</MyButton>}
     </div>
   );
 }

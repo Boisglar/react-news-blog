@@ -4,7 +4,7 @@ import MySelect from './UI/select/MySelect';
 
 function PostFilter({ filter, setFilter }) {
   return (
-    <div>
+    <div className="post-fiter">
       <MyInput
         placeholder="Поиск ..."
         value={filter.query}

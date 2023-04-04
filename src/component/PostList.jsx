@@ -6,10 +6,9 @@ export default function PostList({ posts, title, remove }) {
   if (!posts.length) {
     return <h1 style={{ textAlign: 'center' }}>Посты не найдены!</h1>;
   }
-
   return (
-    <div>
-      <h1 style={{ textAlign: 'center' }}>{title}</h1>
+    <div className="post-list">
+      <h1>{title}</h1>
       <TransitionGroup>
         {posts.map((post) => (
           <CSSTransition key={post.id} classNames="post" timeout={500}>
