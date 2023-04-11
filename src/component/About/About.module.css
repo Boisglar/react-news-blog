@@ -1,0 +1,17 @@
+.About {
+  padding: 50px;
+}
+.About h1 {
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid rgb(133, 133, 133);
+}
+.About div {
+  margin: 15px;
+}
+.About ul {
+  padding: 20px;
+}
+.About li {
+  padding: 5px;
+}

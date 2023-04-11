@@ -1,9 +1,9 @@
 import { Navigate } from 'react-router-dom';
-import About from '../component/About';
 import Login from '../pages/Login';
 import PostById from '../component/PostById';
 import Posts from '../pages/Posts';
 import NotFount from '../pages/NotFount';
+import About from '../component/About/About';
 
 export const privateRoutes = [
   { path: '/about', component: <About /> },

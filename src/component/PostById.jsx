@@ -33,8 +33,9 @@ const PostById = () => {
         <LoaderG />
       ) : (
         <div className="fullPost">
-          <h2>{post.title}</h2>
+          <h1>{post.title}</h1>
           <div>{post.body}</div>
+          <hr />
         </div>
       )}
       <div className="comments">

@@ -1,0 +1,17 @@
+.navbar {
+  margin-top: 10px;
+  background-color: rgb(185, 215, 241);
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.navbar__links a {
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+}

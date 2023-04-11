@@ -11,8 +11,8 @@ function Login() {
     localStorage.setItem('auth', 'true');
   };
   return (
-    <div>
-      <h1>Cтарница логина</h1>
+    <div className="login-form">
+      <h1>Вход</h1>
       <form onSubmit={hendelAuth}>
         <MyInput type="text" placeholder="login" />
         <MyInput type="password" placeholder="password" />

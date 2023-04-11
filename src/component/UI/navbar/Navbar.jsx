@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../../../context/context';
 import MyButton from '../button/MyButton';
+import s from './Navbar.module.css';
 
 function Navbar() {
   const { isAuth, setIsAuth } = useContext(AuthContext);
@@ -12,8 +13,8 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar">
-      <div className="navbar__links">
+    <div className={s.navbar}>
+      <div className={s.navbar__links}>
         <NavLink to="/About"> О сайте </NavLink>
         <NavLink to="/posts"> Посты</NavLink>
       </div>
