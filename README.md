@@ -1,3 +1,5 @@
+![Image alt]([https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png](https://github.com/Boisglar/react-news-blog/blob/main/Снимок%20экрана%202023-04-11%20в%2017.08.15.png))
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
