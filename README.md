@@ -1,15 +1,8 @@
-# Getting Started with Create React App
+# Тестовое задание
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Image alt](https://github.com/Boisglar/react-news-blog/blob/main/Снимок%20экрана%202023-04-11%20в%2017.08.15.png)
+![Image alt](https://github.com/Boisglar/react-news-blog/blob/main/Снимок%20экрана%202023-04-11%20в%2017.08.05.png)
+![Image alt](https://github.com/Boisglar/react-news-blog/blob/main/Снимок%20экрана%202023-04-11%20в%2017.08.45.png)
+![Image alt](https://github.com/Boisglar/react-news-blog/blob/main/Снимок%20экрана%202023-04-11%20в%2017.08.25.png)
+![Image alt](https://github.com/Boisglar/react-news-blog/blob/main/Снимок%20экрана%202023-04-11%20в%2017.08.51.png)
+![Image alt](https://github.com/Boisglar/react-news-blog/blob/main/Снимок%20экрана%202023-04-11%20в%2017.09.15.png)
